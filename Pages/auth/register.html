@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/Images/faviconio-logo/gemmaFavicon.png">
+
+    <link rel="stylesheet" href="/styles.css">
+    <title>Login Page</title>
+</head>
+
+<body class="login-page" style="background-color: rgb(109, 10, 63);">
+    <p class="headliner">Refer A Friend and get 250 naira in your wallet🎉 <span onclick="closeHeadliner()"><img
+                src="/Images/vectors/x.svg" style="color: green;" /></span></p>
+
+    <section>
+        <div class="login" id="login">
+            <div class="welcome">
+                <div><img src="/Images/vectors/loginIcon.svg" /></div>
+                <div>
+                    <h3 style="margin-top: .3em;">Welcome Back!</h3>
+                    <p>To keep connected to us, login with your <br /> personal info</p>
+                    <div><button id="signIn" onclick="login()">SIGN IN</button></div>
+                </div>
+            </div>
+
+
+
+
+            <form class="form">
+
+                <div><img id="form-img" src="/Images/faviconio-logo/gemmaFaviconR.png" /></div>
+
+                <div class="create">
+                    <h3 style="text-align: center;margin-top: .3em;">Create Account</h3>
+                    <p>Create an account to start using Gemma</p>
+                </div>
+
+                <div class="first-name">
+                    <input name="name" value="First Name">
+                    <img id="firstname" src="/Images/form-logo/person-fill.svg" />
+                    </input>
+                </div>
+
+                <div class="last-name">
+                    <input type="text" value="Last Name">
+                    <img src="/Images/form-logo/person-fill.svg" id="lastname" />
+                    </input>
+                </div>
+
+                <div class="telephone">
+                    <input value="Telephone Number">
+                    <img src="/Images/form-logo/telephone-fill.svg" id="telephone" />
+                    </input>
+                </div>
+
+                <div class="email">
+                    <input type="email" value="E-mail">
+                    <img src="/Images/form-logo/envelope-fill.svg" id="email" />
+                    </input>
+                </div>
+
+                <div class="password">
+                    <input type="password" placeholder="Password">
+                    <img src="/Images/form-logo/shield-lock-fill.svg" id="password" />
+                    </input>
+                </div>
+                <div class="form-btn-cta"><button class="form-btn">Sign Up</button></div>
+            </form>
+        </div>
+
+        <div class="login" id="signUp">
+            <form class="form" id="form">
+                <div><img id="form-img" src="/Images/faviconio-logo/gemmaFaviconR.png" /></div>
+
+                <div class="create">
+                    <h3 style="text-align: center;margin-top: .3em;">Sign in to Gemma</h3>
+                    <p>Choose your account type, and enter your details</p>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox" checked onclick="checker()"
+                        name="checkbox"><span>Customer</span>
+                    <input type="checkbox" id="checkbox" onclick="checker()" name="checkbox"><span>Associate</span>
+                </div>
+                <div class="email">
+                    <input type="email" value="E-mail">
+                    <img src="/Images/form-logo/envelope-fill.svg" id="em-img" />
+                    </input>
+                </div>
+                <div class="password">
+                    <input type="password" placeholder="Password">
+                    <img src="/Images/form-logo/shield-lock-fill.svg" id="pass-img" />
+                    </input>
+                </div>
+                <div class="form-btn-cta">
+                    <button class="form-btn" id="form-btn">SIGN IN</button>
+                    <p class="fp">Forgot Password?&nbsp;<a href="#" onclick="reset()">Reset here</a></p>
+                </div>
+            </form>
+
+
+
+
+            <form class="form" id="reset">
+                <div><img id="form-img" src="/Images/faviconio-logo/gemmaFaviconR.png" /></div>
+
+                <div class="create">
+                    <h3 style="text-align: center;margin-top: .3em;">Forgot Password?</h3>
+                    <p>Choose your account type, and enter your details</p>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox" checked onclick="checker()"
+                        name="checkbox"><span>Customer</span>
+                    <input type="checkbox" id="checkbox" onclick="checker()" name="checkbox"><span>Associate</span>
+                </div>
+                <div class="email">
+                    <input type="email" value="E-mail">
+                    <img src="/Images/form-logo/envelope-fill.svg" id="em-img" />
+                    </input>
+                </div>
+                <div class="form-btn-cta">
+                    <button class="form-btn" id="form-btn">Submit</button>
+                    <p class="fp">Remember your login details?&nbsp;<a href="#" onclick="login()">Login now</a></p>
+                </div>
+            </form>
+
+
+            <div id="friend-sect">
+                <div class="welcome" id="friend-cta">
+                    <div class="signUp-img-cta"><img id="signUp-img" src="/Images/vectors/loginIcon.svg" /></div>
+                    <div>
+                        <h3 style="margin-top: .3em;">Hello, Friend!</h3>
+                        <p>Enter personal details and start your journey with <br /> us</p>
+                        <div><button id="signIn" onclick="login()">SIGN UP</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script type="text/javascript" src="/main.js"></script>
+</body>
+
+</html>

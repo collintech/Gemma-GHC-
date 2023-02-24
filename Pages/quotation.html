@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/Images/faviconio-logo/gemmaFavicon.png" />
+
+    <link rel="stylesheet" href="/styles.css" />
+
+
+    <title>Gemma</title>
+</head>
+
+<body>
+
+    <p class="headliner">Refer A Friend and get 250 naira in your wallet🎉 <span onclick="closeHeadliner()"><img
+                src="/Images/vectors/x.svg" style="color: green;" /></span></p>
+    <section class="quotation">
+        <header class="hero-cta">
+            <nav class="nav-items" style="cursor: pointer;">
+                <div style="margin-left: 2em;">
+                    <img class="logo" src="/Images/gemma.png" alt="company logo" />
+                </div>
+                <ul>
+                    <li><a href="/Pages/auth/register.html">Login</a></li>
+                    <li><a href="/Pages/Services.html">Services</a></li>
+                    <li><a href="/Pages/Contact Us.html">Contact Us</a></li>
+                    <li><a href="/Pages/Billing.html">Billing</a></li>
+                    <li><a href="/Pages/Associates.html">Associates</a></li>
+                </ul>
+            </nav>
+
+            <div class="hero-text-cta">
+                <h2>Get in touch with our sales team</h2>
+                <p>Flexible pricing for homes and business.</p>
+            </div>
+        </header>
+
+        <main class="form-container" id="company-form">
+            <form class="ass-form" id="ass-form">
+                <div class="ass-form-top">
+                    <div class="com-name" onclick="comName()" id="com-name">
+                        <h4>CORPORATES</h4>
+                    </div>
+                    <div class="post-con" onclick="postConstruct()" id="post-con">
+                        <h4>POST CONSTRUCTION</h4>
+                    </div>
+                    <div class="spec-req" onclick="specialRequest()" id="spec-req">
+                        <h4>SPECIAL REQUESTS</h4>
+                    </div>
+                </div>
+
+                <div class="ass-form-intro">
+                    <h3>GREAT FOR SMALL, MEDIUM OR LARGE BUSINESSES</h3>
+                </div>
+
+                <div class="ass-form-inner">
+                    <div class="first-input">
+                        <div>
+                            <label>Company's Name</label>
+                            <input placeholder="Swipe Limited">
+                        </div>
+
+                        <div>
+                            <label>Your full name</label>
+                            <input placeholder="Peter Johnson">
+                        </div>
+
+                        <div>
+                            <label for="tel">Phone number</label>
+                            <input name="tel" type="tel" placeholder="09022750123">
+                        </div>
+
+                        <div>
+                            <label>Number of office rooms
+                                <select style="display: block;min-width: 100%;height: 100%;margin: .5em 0;">
+                                    <option>select no of rooms</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <div style="margin-top: 2em;">
+                            <label for="text-area">How did you hear about us</label>
+                            <textarea name="text-area" cols="40" rows="8">
+                                comment here
+                            </textarea>
+                        </div>
+                    </div>
+
+                    <div class="second-input">
+                        <div>
+                            <label>Company's Address</label>
+                            <input>
+                        </div>
+
+                        <div>
+                            <label>Company's Email</label>
+                            <input>
+                        </div>
+
+                        <div>
+                            <label>Number of proposed cleaning associates
+                                <select style="min-width: 100%;height: 100%;margin: .5em 0">
+                                    <option>select no of associates</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <div style="margin-top: 2em;">
+                            <label>Any other information</label>
+                            <textarea cols="40" rows="8"></textarea>
+                            <button class="sec-input-btn" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </main>
+
+
+
+        <main class="form-container" id="personal-form">
+            <form class="ass-form" id="ass-form">
+                <div class="ass-form-top">
+                    <div class="com-name" onclick="comName();" id="com-name">
+                        <h4>CORPORATES</h4>
+                    </div>
+                    <div class="post-con" onclick="postConstruct();" id="post-con">
+                        <h4>POST CONSTRUCTION</h4>
+                    </div>
+                    <div class="spec-req" onclick="specialRequest()" id="spec-req">
+                        <h4>SPECIAL REQUESTS</h4>
+                    </div>
+                </div>
+
+                <div class="ass-form-intro">
+                    <h3>GREAT FOR RECENTLY VACATED / COMPLETED BUILDINGS</h3>
+                </div>
+
+                <div class="ass-form-inner">
+                    <div class="first-input">
+                        <div>
+                            <label>Customer's Name</label>
+                            <input placeholder="Full Name">
+                        </div>
+
+                        <div>
+                            <label for="tel">Phone number</label>
+                            <input name="tel" type="tel" placeholder="09022750123">
+                        </div>
+
+                        <div style="margin-top: 2em;">
+                            <label for="text-area">Provide a detailed house/building description</label>
+                            <textarea name="text-area" cols="40" rows="8">
+                                comment here
+                            </textarea>
+                        </div>
+
+                        <div>
+                            <label>Do you need fumigation
+                                <select style="display: block;min-width: 100%;height: 100%;margin: .5em 0;">
+                                    <option>select Yes or No</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="second-input">
+                        <div>
+                            <label>Email Address</label>
+                            <input>
+                        </div>
+                        <div>
+                            <label>Building Address/Closest Landmark</label>
+                            <input>
+                        </div>
+
+
+                        <div>
+                            <label>How soon do you want to clean?
+                                <input type="date">
+                            </label>
+                        </div>
+
+                        <div style="margin-top: 2em;">
+                            <label>Any other information</label>
+                            <textarea cols="40" rows="8"></textarea>
+                            <button class="sec-input-btn" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </main>
+
+
+    </section>
+
+    <footer style="margin-top: 0;">
+        <div class="head-points">
+            <div class="head-point-a">
+                <div class="company">
+                    <h5>Company</h5>
+                    <ul>
+                        <a href="#">
+                            <li>About Us</li>
+                        </a>
+                        <a href="#">
+                            <li>Careers</li>
+                        </a>
+                        <a href="#">
+                            <li>Blog</li>
+                        </a>
+                        <a href="#">
+                            <li>Press</li>
+                        </a>
+                        <a href="#">
+                            <li>Brand Guidelines</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="product">
+                    <h5>Product</h5>
+                    <ul>
+                        <a href="#">
+                            <li>Why Gemma?</li>
+                        </a>
+                        <a href="#">
+                            <li>Corporate</li>
+                        </a>
+                        <a href="#">
+                            <li>Customer Stories</li>
+                        </a>
+                        <a href="#">
+                            <li>Become an Assoicate</li>
+                        </a>
+                        <a href="#">
+                            <li>Pricing</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="resources">
+                    <h5>Resources</h5>
+                    <ul>
+                        <a href="#">
+                            <li>Download</li>
+                        </a>
+                        <a href="#">
+                            <li>FAQs</li>
+                        </a>
+                        <a href="#">
+                            <li>Guides</li>
+                        </a>
+                        <a href="#">
+                            <li>Partners</li>
+                        </a>
+                        <a href="#">
+                            <li>Events</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="expresso-cta">
+                <div class="expresso">
+                    <h5 style="font-size: 1.1rem;">Stay in touch with the latest updates</h5>
+                    <p style="font-size: 1.03rem;">Thousands of busy people just like you are signing up our wonderful
+                        service. Take advantage of Gemma
+                        by signing up</p>
+                    <input type="email"
+                        style="border-radius: 1.5em; min-width:300px; height: 40px; border:none;text-align: center">
+                    <img id="env" src="/images/vectors/envelope.svg" />
+                    <img id="send" src="/images/vectors/send.svg" />
+                    </input>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="bottom">
+            <div class="bottom-one">
+                <div class="items">
+                    <ul>
+                        <li>Terms of Service</li>
+                        <li>Privacy Policy</li>
+                        <li>Cleaning Agreement</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>&copy;Gemma.All Rights Reserved</p>
+                </div>
+                <div class="social-media">
+                    <p>Follow us</p>
+                    <div class="social-media-cta">
+                        <a href="https://www.twitter.com/gemmahomecare" target="_blank"><img
+                                src="/Images/vectors/twitter.svg" /></a>
+                        <a href="https://www.facebook.com/gemmahomecare" target="_blank"><img
+                                src="/Images/vectors/facebook.svg" /></a>
+                        <a href="https://www.linkedin.com/in/" target="_blank"><img
+                                src="/Images/vectors/linkedin.svg" /></a>
+                        <a href="https://www.instagram.com/gemmahomecare" target="_blank"><img
+                                src="/Images/vectors/instagram.svg" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="/index.js"></script>
+    <script type="text/javascript" src="/main.js"></script>
+</body>
+
+</html>

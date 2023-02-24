@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/Images/faviconio-logo/gemmaFavicon.png">
+
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/main.css">
+    <title>Gemma</title>
+</head>
+
+<body id="asso-body">
+
+    <p class="headliner">Refer A Friend and get 250 naira in your wallet🎉 <span onclick="closeHeadliner()"><img
+                src="/Images/vectors/x.svg" style="color: green;" /></span></p>
+    <header class="header">
+        <div>
+            <img class="logo" src="/Images/gemma.png" alt="company logo" />
+        </div>
+        <nav class="nav">
+            <ul class="nav-links">
+                <a class="booking" href="/Pages/Billing.html">
+                    <li>Book a Cleaning</li>
+                </a>
+                <!-- <a href="#">
+                    <li>Services</li>
+                </a>
+                <a href="./About.html">
+                    <li>About</li>
+                </a>
+                <a href="#">
+                    <li>Billing</li>
+                </a>
+                <a href="#">
+                    <li>Contact Us</li>
+                </a> -->
+            </ul>
+        </nav>
+    </header>
+
+    <div class="head-point">
+        <p onclick="openForm()"><a>Become an Associate</a></p>
+    </div>
+    <div class="form-opener">
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <h1 class="top">Become an Associate</h1>
+                <p class="top">Please complete the form below with
+                    your details to join our associates community
+                </p>
+                <div class="p-details">
+                    <div class="p-details1">
+                        <input type="text" placeholder="First Name" required>
+                        <input type="text" placeholder="Email-Address" name="email" required>
+                        <input type="text" placeholder="Phone Number" name="email" required>
+                        <input type="text" placeholder="City" name="email" required>
+                    </div>
+
+                    <div class="p-details2">
+
+                        <input type="text" placeholder="Last Name">
+                        <input type="password" placeholder="Password" name="psw" required>
+                        <input type="text" placeholder="Home Address">
+                        <select class="states">
+                            <option value="">Select State</option>
+                            <option value="Lagos">Lagos</option>
+                            <option value="Abia">Abia</option>
+                            <option value="Adamawa">Adamawa</option>
+                            <option value="Akwa-Ibom">Akwa-Ibom</option>
+                            <option value="Anambra">Anambra</option>
+                            <option value="Bauchi">Bauchi</option>
+                            <option value="Bayelsa">Bayelsa</option>
+                            <option value="Benue">Benue</option>
+                            <option value="Borno">Borno</option>
+                            <option value="cross-river">Cross River</option>
+                            <option value="Delta">Delta</option>
+                            <option value="Ebonyi">Ebonyi</option>
+                            <option value="Edo">Edo</option>
+                            <option value="Ekiti">Ekiti</option>
+                            <option value="Enugu">Enugu</option>
+                            <option value="Fct">FCT</option>
+                            <option value="Gombe">Gombe</option>
+                            <option value="Imo">Imo</option>
+                            <option value="Jigawa">Jigawa</option>
+                            <option value="Kano">Kano</option>
+                            <option value="Katsina">Katsina</option>
+                            <option value="Kebbi">Kebbi</option>
+                            <option value="Kogi">Kogi</option>
+                            <option value="Kwara">Kwara</option>
+                            <option value="Nassarawa">Nassarawa</option>
+                            <option value="Niger">Niger</option>
+                            <option value="Ogun">Ogun</option>
+                            <option value="Ondo">Ondo</option>
+                            <option value="Osun">Osun</option>
+                            <option value="Plateau">Plateau</option>
+                            <option value="Rivers">Rivers</option>
+                            <option value="Sokoto">Sokoto</option>
+                            <option value="Taraba">Taraba</option>
+                            <option value="Yobe">Yobe</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="b-details">
+
+                    <div class="b-details1">
+                        <p>Part B: Bank Details</p>
+                        <select class="banks-cta">
+                            <option value="">Select Bank</option>
+                            <option value="Access Bank">Access Bank Plc</option>
+                            <option value="FB">Fidelity Bank Plc</option>
+                            <option value="FCMB">First City Monument Bank</option>
+                            <option value="FBN">First Bank of Nigeria Limited</option>
+                            <option value="GTB">Guaranty Trust Holding Company Plc</option>
+                            <option value="Kuda">Kuda Microfinance Bank</option>
+                            <option value="KSB">Keystone Bank Limited</option>
+                            <option value="PBL">Polaris Bank Limited</option>
+                            <option value="SIB">Stanbic IBTC Bank Plc</option>
+                            <option value="UBN">Union Bank of Nigeria Plc</option>
+                            <option value="UBA">United Bank for Africa Plc</option>
+                            <option value="Wema">Wema Bank Plc</option>
+                            <option value="ZB">Zenith Bank Plc</option>
+                        </select>
+                        <input type="text" placeholder="Account Name" required>
+
+                        <select onclick="docSelector()" class="international" id="inter">
+                            <option>Select document type</option>
+                            <option onselect="docSelector" value="IP">International Passport</option>
+                            <option onselect="docSelector" value="NIC">National I.D Card</option>
+                            <option onselect="docSelector" value="VC">Voters Card</option>
+                            <option onselect="docSelector" value="DL">Drivers Licence</option>
+                        </select>
+
+                        <div id="part-b">
+                            <div class="ip-cta" id="ip-cta">
+                                <p id="ip"><b>Part B(a): Upload your international passport</b></p>
+                            </div>
+                            <div class="vc-cta" id="vc-cta">
+                                <p id="vc"><b>Part B(a): Upload your Voters Card</b></p>
+                            </div>
+                            <div class="nic-cta" id="nic-cta">
+                                <p id="nic"><b>Part B(a): Upload your National I.D Card</b></p>
+                            </div>
+                            <div class="dl-cta" id="dl-cta">
+                                <p id="dl"><b>Part B(a): Upload your drivers Licence</b></p>
+                            </div>
+                        </div>
+                        <div class="file-cta" id="file-cta">
+                            <input type="file" id="file">
+                        </div>
+
+                    </div>
+
+                    <div class="b-details2">
+                        <input type="text" placeholder="Account Number">
+                        <input type="text" placeholder="Bank Verification Number(BVN)">
+                    </div>
+                </div>
+
+
+                <P style="margin-top: 1em;">Part C: Guarantor Details</P>
+                <div class="guarantor">
+                    <div class="guarantorA">
+                        <input type="text" placeholder="Guarantor's First Name">
+                        <input type="text" placeholder="Guarantor's Phone Number(s)">
+                        <input type="text" placeholder="Guarantor Home/Office Address">
+                    </div>
+
+                    <div class="guarantorB">
+                        <input type="text" placeholder="Guarantor's Last Name">
+                        <input type="text" placeholder="Guarantor's Email-Address">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn">Submit Details</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+    </div>
+
+    <main class="services">
+        <div class="services-cta ">
+            <div class="make_money">
+                <div>
+                    <img id="serv-first-img" src="/Images/vectors/make_money.png" />
+                </div>
+                <div>
+                    <h3>Make Money</h3>
+                    <p>
+                        Ready to make money whenever you want? Earn as much as N120,000 <br> when you join the team.
+                    </p>
+                </div>
+            </div>
+            <div class="join">
+                <div>
+                    <h3>Join a fast growing company</h3>
+                    <p> Make money and work with a company you can be proud of.</p>
+                </div>
+                <div>
+                    <img id="serv-first-img" src="/Images/vectors/treasure.png" />
+                </div>
+            </div>
+            <div class="mish">
+                <div>
+                    <img id="serv-first-img" src="/Images/vectors/mission.png" />
+                </div>
+                <div>
+                    <h3>Make Impact</h3>
+                    <p>
+                        Join our mission and make a difference in your life and community. <br> are making Nigeria clean
+                        one
+                        home at a time
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="head-points">
+            <div class="head-point-a">
+                <div class="company">
+                    <h5>Company</h5>
+                    <ul>
+                        <a href="#">
+                            <li>About Us</li>
+                        </a>
+                        <a href="#">
+                            <li>Careers</li>
+                        </a>
+                        <a href="#">
+                            <li>Blog</li>
+                        </a>
+                        <a href="#">
+                            <li>Press</li>
+                        </a>
+                        <a href="#">
+                            <li>Brand Guidelines</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="product">
+                    <h5>Product</h5>
+                    <ul>
+                        <a href="#">
+                            <li>Why Gemma?</li>
+                        </a>
+                        <a href="#">
+                            <li>Corporate</li>
+                        </a>
+                        <a href="#">
+                            <li>Customer Stories</li>
+                        </a>
+                        <a href="#">
+                            <li>Become an Assoicate</li>
+                        </a>
+                        <a href="#">
+                            <li>Pricing</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="resources">
+                    <h5>Resources</h5>
+                    <ul>
+                        <a href="#">
+                            <li>Download</li>
+                        </a>
+                        <a href="#">
+                            <li>FAQs</li>
+                        </a>
+                        <a href="#">
+                            <li>Guides</li>
+                        </a>
+                        <a href="#">
+                            <li>Partners</li>
+                        </a>
+                        <a href="#">
+                            <li>Events</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="expresso-cta">
+                <div class="expresso">
+                    <h5>Stay in touch with the latest updates</h5>
+                    <p>Thousands of busy people just like you are signing up our wonderful service. Take advantage of
+                        Gemma
+                        by signing up</p>
+                    <input type="email"
+                        style="border-radius: 1.5em; min-width:300px; height: 40px; border:none;text-align: center">
+                    <img id="env" src="/images/vectors/envelope.svg" />
+                    <img id="send" src="/images/vectors/send.svg" />
+                    </input>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="bottom">
+            <div class="bottom-one">
+                <div class="items">
+                    <ul>
+                        <li>Terms of Service</li>
+                        <li>Privacy Policy</li>
+                        <li>Cleaning Agreement</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>&copy;Gemma.All Rights Reserved</p>
+                </div>
+                <div class="social-media">
+                    <p>Follow us</p>
+                    <div class="social-media-cta">
+                        <img src="/Images/vectors/twitter.svg" />
+                        <img src="/Images/vectors/facebook.svg" />
+                        <img src="/Images/vectors/linkedin.svg" />
+                        <img src="/Images/vectors/instagram.svg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="/main.js"></script>
+</body>
+
+</html>
